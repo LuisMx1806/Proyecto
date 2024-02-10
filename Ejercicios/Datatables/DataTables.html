@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTables</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+</head>
+<body>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Luis Ambríz</td>
+            <td>19</td>
+            <td>Linares</td>
+        </tr>    
+        <tr>
+            <td>Leslie Abril</td>
+            <td>14</td>
+            <td>Linares</td>
+        </tr>    
+        <tr>
+            <td>Antonio</td>
+            <td>20</td>
+            <td>Linares</td>
+        </tr>    
+        <tr>
+            <td>Carlos</td>
+            <td>17</td>
+            <td>Linares</td>
+        </tr>    
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script>
+
+</body>
+</html>
